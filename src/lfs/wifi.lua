@@ -1,4 +1,6 @@
 print("Heap: ", node.heap(), "Connecting to Wifi..")
+wifi.nullmodesleep(false)
+
 local startWifiSetup = function()
   print("Heap: ", node.heap(), "Entering Wifi setup mode")
   wifi.eventmon.unregister(wifi.eventmon.STA_DISCONNECTED)
